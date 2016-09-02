@@ -4,7 +4,7 @@
         <li><a href="{{ site.baseurl }}/" class="blue-text">Home</a></li>
         {% for page in site.pages %}
             {% if page.title %}
-                <li><a href="{{ page.url | prepend: site.baseurl }}" class="blue-text">{{ page.title }}</a></li>
+                <li><a class="brand-logo" href="{{ site.baseurl }}/" class="blue-text"> {% include pipeline-logo-svg.html %}</a></li>
             {% endif %}
         {% endfor %}
         <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="blue-text">Feed</a></li>
@@ -14,7 +14,7 @@
     <ul class="right hide-on-med-and-down">
         {% for page in site.pages %}
             {% if page.title %}
-                <li><a href="{{ page.url | prepend: site.baseurl }}" class="blue-text">{{ page.title }}</a></li>
+                <li><a class="brand-logo" href="{{ site.baseurl }}/" class="blue-text"> {% include pipeline-logo-svg.html %}</a></li>
             {% endif %}
         {% endfor %}
         <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="blue-text">Feed</a></li>
