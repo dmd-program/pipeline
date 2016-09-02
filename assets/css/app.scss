@@ -100,9 +100,15 @@ footer.page-footer {
   font-size: 13px;
   line-height: 1.5;
   letter-spacing: -0.003em;
- }
- // Pipline Logo
+}
+ // Pipline
 svg#pipeline-icon {
   width: 3rem;
   height: auto;
- }
+}
+
+.pipeline {
+  .collapsible-body {
+    padding:1.5rem;
+  }
+}
