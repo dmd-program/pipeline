@@ -3,7 +3,7 @@ title: Pipeline
 description: > # this means to ignore newlines until "baseurl:"
     Creative project pipeline prototype.
 url: "http://yourdomain.com"
-baseurl: ""
+baseurl: "/pipeline"
 logo: jekyll-<b>materialize</b>
 paginate: 5
 paginate_path: "/page:num/"
