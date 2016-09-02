@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126 72">
+  <defs>
+    <style>
+      .\34 d76d9eb-9e28-49f4-9248-08147e21ec51, .f225e714-f6e4-434e-8d41-51adae5929e3 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .f225e714-f6e4-434e-8d41-51adae5929e3 {
+        stroke-width: 36px;
+      }
+
+      .\34 d76d9eb-9e28-49f4-9248-08147e21ec51 {
+        stroke-width: 18px;
+      }
+    </style>
+  </defs>
+  <title>Asset 2</title>
+  <g id="5f3631e4-392b-462c-93e4-4f9cd3d3a204" data-name="Layer 2">
+    <g id="ac403621-a045-4740-81db-91c41bbe9acf" data-name="Layer 1">
+      <polyline class="f225e714-f6e4-434e-8d41-51adae5929e3" points="117 27 81 27 45 45 9 45"/>
+      <line class="4d76d9eb-9e28-49f4-9248-08147e21ec51" x1="9" y1="18" x2="9" y2="72"/>
+      <line class="4d76d9eb-9e28-49f4-9248-08147e21ec51" x1="117" x2="117" y2="54"/>
+    </g>
+  </g>
+</svg>
