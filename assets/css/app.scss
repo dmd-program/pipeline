@@ -111,6 +111,10 @@ svg#pipeline-icon {
   .collapsible-body {
     padding:1.5rem;
   }
+  h3 {
+    margin: 3rem 0 5rem;
+    text-transform: uppercase;
+  }
 }
 .collapsible-header img {
     width: 2rem;
@@ -122,6 +126,13 @@ svg#pipeline-icon {
     margin-right: 1rem;
   }
   img.svg-header-icon {
+    width: 15rem;
+    font-size: 1.6rem;
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+  }
+  img.svg-section-header-icon {
     width: 5rem;
     font-size: 1.6rem;
     display: block;
