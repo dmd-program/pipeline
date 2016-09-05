@@ -105,6 +105,12 @@ footer.page-footer {
 svg#pipeline-icon {
   width: 3rem;
   height: auto;
+  line, polyline {
+    stroke: 2196F3;
+  }
+  path {
+    fill: 2196F3;
+  }
 }
 nav .brand-logo {
   padding:10px;
