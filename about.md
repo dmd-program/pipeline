@@ -1,8 +1,7 @@
 ---
 layout: page
-title: About
+title: Pipeline
 permalink: /about/
 ---
 
-Hello World! 
-Welcome to jekyll-materialize
+A prototype for PIPELINE, a tool for organizing and managing creative projects. Built on jekyll-materialize.
