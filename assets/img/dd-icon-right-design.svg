@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.5214 36.397">
+  <defs>
+    <style>
+      .\30 abcde85-a03c-4ef0-965e-75193c7148d5 {
+        fill: none;
+        stroke: #231f20;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+
+      .e7150ef1-60c8-47c7-a0c9-343f9fd4a5e4 {
+        fill: #231f20;
+      }
+    </style>
+  </defs>
+  <title>dd-icon-Asset 5</title>
+  <g id="367a39ff-4e89-4b26-8f11-38c247ed889c" data-name="Layer 2">
+    <g id="6a2dcb18-3024-40e0-b95f-90de34f200e7" data-name="Layer 1">
+      <polygon class="0abcde85-a03c-4ef0-965e-75193c7148d5" points="63.521 18.198 47.323 2 32.761 16.562 18.198 2 2 18.198 18.198 34.397 32.761 19.835 47.323 34.397 63.521 18.198"/>
+      <path class="e7150ef1-60c8-47c7-a0c9-343f9fd4a5e4" d="M18.1984,2,2,18.1984,18.1984,34.3969,32.7878,19.8076a2.2757,2.2757,0,0,0,0-3.2183Z"/>
+    </g>
+  </g>
+</svg>
