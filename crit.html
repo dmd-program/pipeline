@@ -8,7 +8,7 @@ title: Crit Space
 
     <div class="card">
       <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="https://unsplash.it/400/400/?random">
+        <img class="materialboxed" src="https://unsplash.it/400/400/?random">
       </div>
       <div class="card-content">
         <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
@@ -22,18 +22,40 @@ title: Crit Space
 
   </div>
   <div class="col s6">
-         <ul class="collapsible" data-collapsible="accordion">
-      <li>
-        <div class="collapsible-header"><i class="material-icons">info_outline</i>Directions</div>
-        <div class="collapsible-body"><p>Directions</p></div>
-      </li>
-      <li>
-        <div class="collapsible-header"><i class="material-icons">comment</i>Second</div>
-        <div class="collapsible-body">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <a class="waves-effect btn-flat"><i class="left material-icons">done</i>Submit</a>
-        </div>
-      </li>
-    </ul>
+    <div class="row">
+
+      <ul class="tabs">
+        <li class="tab col s6"><a href="#myfeedback">Test 1</a></li>
+        <li class="tab col s6"><a class="active" href="#allfeedback">Test 2</a></li>
+      </ul>
+    </div>
+
+    <div class="row">
+      
+      <div id="myfeedback" class="col s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">info_outline</i>Directions</div>
+            <div class="collapsible-body"><p>Directions</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">comment</i>Second</div>
+            <div class="collapsible-body">
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a class="waves-effect btn-flat"><i class="left material-icons">done</i>Submit</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+     
+      <div id="allfeedback" class="col s12">
+      All feedback.
+      </div>
+    </div>
+    
+  
   </div>
+
+
+
 </div> 
