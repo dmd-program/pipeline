@@ -156,5 +156,11 @@ nav .brand-logo {
 
   //crit
   .collection .collection-item.avatar p {
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    padding-left:0;
+  }
+  .collection .collection-item.avatar p.reply {
+    padding-right: 0;
   }
