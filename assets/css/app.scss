@@ -186,3 +186,9 @@ nav .brand-logo {
   .collapsible-body {
     background-color: #fff;
 }
+.studio .card {
+@extend .z-depth-0
+}
+.card-image img.initialized.active {
+  z-index: 1000;
+}
