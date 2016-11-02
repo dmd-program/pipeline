@@ -200,15 +200,16 @@ nav .brand-logo {
 }
 
 //Forum
-.topic-category{
-
+.forum .collection {
+  border-top: 1px solid #e0e0e0; 
+}
+.topic-category {
 }
 .forum-people.collection .collection-item.avatar p {
- padding:inherit;
+ padding:0rem 1rem 1rem 0rem;
 }
 .topic-qty {
   padding-left:1rem;
 }
 .post-qty {
-
 }
