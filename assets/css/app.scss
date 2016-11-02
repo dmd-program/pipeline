@@ -200,8 +200,11 @@ nav .brand-logo {
 }
 
 //Forum
-.topic-category {
+.topic-category{
 
+}
+.forum-people.collection .collection-item.avatar p {
+ padding:inherit;
 }
 .topic-qty {
   padding-left:1rem;
