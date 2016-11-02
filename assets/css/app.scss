@@ -208,14 +208,18 @@ td.topic-category {
   padding:1rem 2rem 0rem 1rem;
 }
 td.topic-category a {
-padding:1rem 2rem 1rem 0;
-display: block;
+  padding:1rem 2rem 1rem 0;
+  display: block;
 }
 .forum-people.collection .collection-item.avatar {
-   min-height:4rem;
+  min-height:4rem;
+  background-color: #efefef;
+}
+.forum-people.collection .collection-item {
+  border-bottom: 1px solid #fff;
 }
 .forum-people.collection .collection-item.avatar p {
- padding:0;
+  padding:0;
 }
 .topic-qty {
   padding-left:1rem;
