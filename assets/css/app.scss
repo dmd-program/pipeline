@@ -204,7 +204,11 @@ nav .brand-logo {
   min-height:64px;
   border:none;
 }
-.topic-category {
+td.topic-category {
+  padding:1rem 2rem 2rem 1rem;
+}
+td.topic-category a {
+padding:1rem 2rem 1rem 0;
 }
 .forum-people.collection .collection-item.avatar {
    min-height:4rem;
