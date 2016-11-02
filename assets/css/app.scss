@@ -201,12 +201,14 @@ nav .brand-logo {
 
 //Forum
 .forum-people.collection {
+  min-height:64px;
+  border:none;
   border-top: 1px solid #e0e0e0; 
 }
 .topic-category {
 }
 .forum-people.collection .collection-item.avatar p {
- padding:0rem 1rem 1rem 0rem;
+ padding:0rem 0rem 0rem 1rem;
 }
 .topic-qty {
   padding-left:1rem;
