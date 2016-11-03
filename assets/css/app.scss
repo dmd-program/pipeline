@@ -154,6 +154,13 @@ nav .brand-logo {
     padding:2rem;
   }
 
+  .p-marker {
+    width: 1rem;
+    min-height: 100%;
+    float: right;
+    border-top: 1px solid #ccc;
+  }
+
   //crit
   li.collection-item span.title {
     font-weight: 500;
