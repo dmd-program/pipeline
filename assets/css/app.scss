@@ -158,10 +158,13 @@ nav .brand-logo {
     min-height: 100%;
     float: right;
     border-top: 1px solid #ccc;
-    padding-right:1rem;
+    padding-right:3rem;
   }
 #p-format {
   height: 20rem;
+}
+#p-format.dropdown-content {
+  min-width: 4.5rem;
 }
 [data-activates="p-format"] {
   width:3rem;
