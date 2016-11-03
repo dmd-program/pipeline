@@ -162,6 +162,9 @@ nav .brand-logo {
 #p-format {
   height: 20rem;
 }
+[data-activates="p-format"] {
+  width:3rem;
+}
   //crit
   li.collection-item span.title {
     font-weight: 500;
