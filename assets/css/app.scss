@@ -157,7 +157,7 @@ nav .brand-logo {
   .p-marker {
     min-height: 100%;
     float: right;
-    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     padding-right:3rem;
   }
 #p-format {
@@ -168,6 +168,12 @@ nav .brand-logo {
 }
 [data-activates="p-format"] {
   width:3rem;
+}
+.ptools ul.menu {
+  margin:0;
+}
+p.p-tools. {
+  padding-right:6rem;
 }
   //crit
   li.collection-item span.title {
