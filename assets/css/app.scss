@@ -5,6 +5,14 @@
 @import "fontawesome";
 @import "pygments";
 
+@font-face {
+  font-family: 'Elmsln';
+  src:  url('/assets/fonts/elmsln/elmsln/elmsln.eot') format('eot'),
+        url('/assets/fonts/elmsln/elmsln/elmsln.woff') format('woff');
+}
+.elmsln {
+  font-family: 'Elmsln' !important;
+}
 body {
   display: flex;
   min-height: 100vh;
@@ -12,6 +20,13 @@ body {
 }
 main {
   flex: 1 0 auto;
+}
+
+.is-active {
+  background: #212121;
+}
+.row.border-bottom {
+    border-bottom: 2px solid #212121;
 }
 .container {
   margin: 0 auto;
@@ -69,6 +84,37 @@ nav .brand-logo {
     padding-left: 10px;
     white-space: nowrap;
 }
+nav.elmslntoolbar {
+  a {
+    line-height: 4.4rem;
+  }
+  a:active, a:hover {
+    background: #212121;
+    color:#ffffff !important;
+  }
+}
+.elmslntoolbar.valign-wrapper {
+  -webkit-flex-direction: column; /* Safari */
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+h2.elmslntoolbar-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-left:0;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+
+}
+h3.elmslntoolbar-title {
+  font-size: 1.25rem;
+   font-weight: 100;
+   margin-left:0rem;
+   margin-top: 0.25rem;
+   margin-bottom:1rem;
+
+}
 article {
     padding: 10px;
     font-size: 1.35rem;
@@ -116,7 +162,13 @@ nav .brand-logo {
   padding:10px;
   height:64px;
 }
-
+.tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #212121;
+    will-change: left, right;
+}
 .pipeline {
   .collapsible-body {
     padding:1.5rem;

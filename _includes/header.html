@@ -1,30 +1,102 @@
-<div class="navbar">
+<div class="row no-margin">
+    <div class="col s6">
+        <div class="row no-margin valign-wrapper">
+            <div class="col s1 valign">
+                <a class="" href="{{ site.baseurl }}/" class="blue-text"> {% include dmd-logo-svg.html %}</a>
+            </div>
+            <div class="col s11 elmslntoolbar valign-wrapper">
+                <h2 class="elmslntoolbar-title valign"><a href="#" class="grey-text text-darken-4">Fundamentals of Digital Multimedia Design</a></h2>
+                <h3 class="elmslntoolbar-title valign"><a href="#" class="grey-text text-darken-4">DMD100</a></h3>
+            </div>
+        </div>
+    </div>
+    <div class="col s6">
+        <nav class="nav-extended z-depth-0">
+            <div class="nav-wrapper white">
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="#!">one</a></li>
+                    <li><a href="#!">two</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">three</a></li>
+                </ul>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html" class="grey-text text-darken-4"><i class="material-icons left">local_library</i>Sass</a></li>
+                    <li><a href="badges.html" class="grey-text text-darken-4"><i class="material-icons left">help_outline</i>Components</a></li>
+                    <li><a class="dropdown-button grey-text text-darken-4" href="#!" data-activates="dropdown1"><i class="material-icons left"><img src="https://unsplash.it/32.jpg" alt="" class="circle"></i>Michael<i class="material-icons right">keyboard_arrow_down</i></a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="sass.html" class="grey-text text-darken-4"><i class="material-icons left">local_library</i>Sass</a></li>
+                    <li><a href="badges.html" class="grey-text text-darken-4"><i class="material-icons left">help_outline</i>Components</a></li>
+                    <li><a href="collapsible.html" class="grey-text text-darken-4"><i class="material-icons left"><img src="https://unsplash.it/32.jpg" alt="" class="circle"></i>Michael</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="row border-bottom">
+    <div class="s6 col">
+        <nav class="z-depth-0 elmslntoolbar">
+            <div class="nav-wrapper white">
+                <ul class="left hide-on-med-and-down">
+                    <li class="is-active"><a class="white-text " href="{{ " /outline " | prepend: site.baseurl }}" class="blue-text"><i class="material-icons elmsln left">x</i>Content</a></li>
+                    <li class=""><a class="grey-text text-darken-4" href="{{ " /studio " | prepend: site.baseurl }}" class="blue-text"><i class="material-icons elmsln left">r</i>Studio</a></li>
+                    <li class=""><a class="grey-text text-darken-4" href="{{ " /crit " | prepend: site.baseurl }}" class="blue-text"><i class="material-icons elmsln left">A</i>Discussions</a></li>
+                    <li class=""><a class="grey-text text-darken-4" href="{{ " /forum " | prepend: site.baseurl }}" class="blue-text"><i class="material-icons elmsln left">a</i>Forum</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="s6 col">
+        <nav class="z-depth-0 elmslntoolbar">
+            <div class="nav-wrapper white">
+                <ul class="right hide-on-med-and-down">
+                    <li class=""><a class="green-text" href="{{ site.baseurl }}/book-manager"><i class="material-icons elmsln left">q</i>CIS</a></li>
+                    <li class=""><a class="green-text" href="{{ " /profile " | prepend: site.baseurl }}" class="blue-text"><i class="material-icons elmsln left">T</i>Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- <div class="navbar">
 <nav class="white blue-text z-depth-0">
     <ul id="slide-out" class="side-nav">
-        <li><a href="{{ site.baseurl }}/" class="blue-text">Workflows</a></li>
+        <li><a href="{{ site.baseurl }}/" class="white-text"><i class="material-icons left">info_outline</i>Workflows</a></li>
         <li><a href="{{ site.baseurl }}/book-manager" class="blue-text">Book Manager</a></li>
         <li><a href="{{ "/outline" | prepend: site.baseurl }}" class="blue-text">Outline</a></li>
         <li><a href="{{ "/studio" | prepend: site.baseurl }}" class="blue-text">Studio</a></li>
         <li><a href="{{ "/crit" | prepend: site.baseurl }}" class="blue-text">Crit Space</a></li>
         <li><a href="{{ "/profile" | prepend: site.baseurl }}" class="blue-text">Profile</a></li>
-        <li><a href="{{ "/forum" | prepend: site.baseurl }}" class="blue-text">Forum</a></li>
-        <!-- <li><a href="{{ "/posts" | prepend: site.baseurl }}" class="blue-text">Posts</a></li>
+        <li><a href="{{ "/forum" | prepend: site.baseurl }}" class="blue-text">Forum</a></li> -->
+<!-- <li><a href="{{ "/posts" | prepend: site.baseurl }}" class="blue-text">Posts</a></li>
         <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="blue-text">Feed</a></li> -->
-    </ul>
+<!-- </ul>
     <div class="container container-large">
-        <a class="brand-logo" href="{{ site.baseurl }}/" class="blue-text"> {% include pipeline-logo-svg.html %}</a>
+        <a class="brand-logo" href="{{ site.baseurl }}/" class="blue-text"> {% include dmd-logo-svg.html %}</a>
         <ul class="right hide-on-med-and-down">
-             <li><a href="{{ site.baseurl }}/" class="blue-text">Workflows</a></li>
+             <li><a href="{{ site.baseurl }}/" class="grey-text text-darken-4"><i class="material-icons left">info_outline</i>Workflows</a></li>
+             <li><a href="{{ site.baseurl }}/book-manager" class="blue-text"><i class="material-icons left"><i class="material-icons">local_library</i></i>Book Manager</a></li>
+             <li><a href="{{ "/outline" | prepend: site.baseurl }}" class="blue-text"><i class="material-icons left">help</i>Outline</a></li>
+             <li><a href="{{ "/outline" | prepend: site.baseurl }}" class="blue-text">
+             <img src="https://unsplash.it/64.jpg" alt="" class="circle">Michael</a></li> -->
+<!--  <li><a href="{{ "/posts" | prepend: site.baseurl }}" class="blue-text">Posts</a></li>
+            <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="blue-text">Feed</a></li> -->
+<!-- </ul> -->
+<!-- <a href="#" data-activates="slide-out" class="button-collapse right blue-text"><i class="material-icons">menu</i></a> -->
+<!-- </div>
+    <div class="container container-large">
+        <ul class="right hide-on-med-and-down">
+             <li><a href="{{ site.baseurl }}/" class="white-text grey darken-4"><i class="material-icons left">info_outline</i>Workflows</a></li>
              <li><a href="{{ site.baseurl }}/book-manager" class="blue-text">Book Manager</a></li>
              <li><a href="{{ "/outline" | prepend: site.baseurl }}" class="blue-text">Outline</a></li>
              <li><a href="{{ "/studio" | prepend: site.baseurl }}" class="blue-text">Studio</a></li>
              <li><a href="{{ "/crit" | prepend: site.baseurl }}" class="blue-text">Crit Space</a></li>
              <li><a href="{{ "/profile" | prepend: site.baseurl }}" class="blue-text">Profile</a></li>
-             <li><a href="{{ "/forum" | prepend: site.baseurl }}" class="blue-text">Forum</a></li>
-           <!--  <li><a href="{{ "/posts" | prepend: site.baseurl }}" class="blue-text">Posts</a></li>
+             <li><a href="{{ "/forum" | prepend: site.baseurl }}" class="blue-text">Forum</a></li> -->
+<!--  <li><a href="{{ "/posts" | prepend: site.baseurl }}" class="blue-text">Posts</a></li>
             <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="blue-text">Feed</a></li> -->
-        </ul>
+<!-- </ul>
         <a href="#" data-activates="slide-out" class="button-collapse right blue-text"><i class="material-icons">menu</i></a>
     </div>
 </nav>
-</div>
+</div> -->
