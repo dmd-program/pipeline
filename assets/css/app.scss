@@ -118,13 +118,25 @@ margin-left: 0.5rem
 }
 .elmsln-user {
   &-icons {
-    height: 2.5rem !important;
-    line-height: 2.5rem !important;
-    font-size: 1.2rem !important;
+    height: 3rem !important;
+    line-height: 3rem !important;
+    font-size: 1.5rem !important;
   }
   &-text {
-    line-height: 2.5rem !important;
+    line-height: 3rem !important;
+
   }
+  &-img {
+    line-height: 3rem !important;
+    font-size: 2rem !important;
+    height: 2rem !important;
+    width:2rem !important;
+        margin-top: 0.4rem;
+        overflow: hidden;
+  }
+}
+.radius-4 {
+border-radius: 4px;
 }
 .elmsln-tools {
   &-icons {
@@ -142,7 +154,8 @@ h2.elmslntitlebar-title {
   margin-left:0;
   margin-top: 1rem;
   margin-bottom: 0rem;
-
+  font-family: "Roboto Condensed";
+  text-transform: uppercase;
 }
 h3.elmslntitlebar-title {
   font-size: 1.25rem;
@@ -150,12 +163,28 @@ h3.elmslntitlebar-title {
    margin-left:0rem;
    margin-top: 0.25rem;
    margin-bottom:1rem;
-
+  font-family: "Roboto Condensed";
+  text-transform: uppercase;
+  span.title-section {
+    font-size: 0.825rem;
+    font-style: italic;
+    padding: 0 1rem; 
+  }
 }
 .elmstitlebar-img {
     margin-top: 0;
     height: 5rem;
     display: flex;
+  }
+  nav.elmslnuserbar {
+    height: 4rem;
+    line-height: 4rem;
+  }
+  .elmslnuserbar {
+    a {
+      font-weight:600;
+      font-size: 14px;
+    }
   }
 article {
     padding: 10px;
