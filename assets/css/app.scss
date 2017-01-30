@@ -60,7 +60,29 @@ main {
     &.__right {
         margin-right: 0 !important;
     }
+    &-m {
+      @media #{$medium-only} {
+        margin: 0 !important;
+      }
+    }
 }
+.padding-5 {
+  &-m {
+    @media #{$medium-only} {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+      }
+  }
+}
+.margin-5 {
+  &-m {
+    @media #{$medium-only} {
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+      }
+  }
+}
+
 .divider {
   background: transparent;
   border-bottom: 2px solid rgba(0, 39, 59, 0.08);
@@ -124,7 +146,10 @@ margin-left: 0.5rem
   }
   &-text {
     line-height: 3rem !important;
-
+    @media #{$medium-only} {
+      
+      padding: 0;
+    }
   }
   &-img {
     line-height: 3rem !important;
@@ -184,8 +209,23 @@ h3.elmslntitlebar-title {
     a {
       font-weight:600;
       font-size: 14px;
+      @media only screen and (min-width: 993px) and (max-width: 1096px) {
+       padding: 0px 10px;
+      }
     }
   }
+  // userbar dropdown menu
+  ul.dropdown-content {
+    border-top: 5px solid #212121;
+  }
+.dropdown-content li>a, .dropdown-content li>span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #212121;
+    display: block;
+    padding: 1rem 1rem;
+}
+
 article {
     padding: 10px;
     font-size: 1.35rem;
