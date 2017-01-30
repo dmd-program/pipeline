@@ -122,16 +122,15 @@ nav.elmslntitlebar {
       height: 10rem;
       -webkit-transition: none;
       transition: none;
-      @media only screen and (max-width : 401px) {
-      height:2rem;
-      -webkit-transition: none;
-      transition: none;
+      @media #{$small-and-down} {
+        height:2rem;
+        -webkit-transition: none;
+        transition: none;
       }
       @media only screen and (max-height : 401px) {
-      height:0rem;
-      
-      -webkit-transition: height 1s, transform 2s;
-      transition: height 1s, transform 2s;
+        height:0rem;
+        -webkit-transition: height 1s, transform 2s;
+        transition: height 1s, transform 2s;
       }
     }
 nav.elmslntoolbar {
@@ -173,6 +172,34 @@ margin-left: 0.5rem
     width:2rem !important;
         margin-top: 0.4rem;
         overflow: hidden;
+  }
+}
+.elmsln-sidenav {
+  &-icons {
+    height: 3rem !important;
+    line-height: 3rem !important;
+    font-size: 1.5rem !important;
+  }
+  &-text {
+    line-height: 3rem !important;
+    @media #{$medium-only} {      
+      padding: 0;
+    }
+  }
+  &-img {
+    line-height: 2.2rem !important;
+    font-size: 2.2rem !important;
+    height: 2rem !important;
+    width:2rem !important;
+        margin-top: 0.4rem;
+        overflow: hidden;
+  }
+}
+.side-nav a {
+  height:inherit;
+  padding: 0.75rem 0;
+  @media only screen and (max-height : 501px) {
+    padding: 0.25rem 0;
   }
 }
 .radius-4 {
