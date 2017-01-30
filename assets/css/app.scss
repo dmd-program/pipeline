@@ -120,13 +120,28 @@ nav.elmslntitlebar {
 }
 .parallax-container {
       height: 10rem;
+      -webkit-transition: none;
+      transition: none;
+      @media only screen and (max-width : 401px) {
+      height:2rem;
+      -webkit-transition: none;
+      transition: none;
+      }
+      @media only screen and (max-height : 501px) {
+      height:0rem;
+      
+      -webkit-transition: height 1s, transform 2s;
+      transition: height 1s, transform 2s;
+      }
     }
 nav.elmslntoolbar {
   height: 3.5rem;
   padding-top:0.5rem;
+  transition: all 0.5s ease-out;
   li {
-        height: 3.5rem;
+    height: 3.5rem;
     line-height: 3.5rem;
+    transition: all 0.5s ease-out;
   }
 }
 .elmslntitlebar.valign-wrapper {
