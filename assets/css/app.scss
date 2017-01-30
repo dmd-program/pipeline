@@ -122,6 +122,11 @@ nav.elmslntitlebar {
       height: 10rem;
       -webkit-transition: none;
       transition: none;
+      @media #{$medium-only} {
+        height:6rem;
+       -webkit-transition: none;
+        transition: none;
+      }
       @media #{$small-and-down} {
         height:2rem;
         -webkit-transition: none;
@@ -129,8 +134,8 @@ nav.elmslntitlebar {
       }
       @media only screen and (max-height : 401px) {
         height:0rem;
-        -webkit-transition: height 1s, transform 2s;
-        transition: height 1s, transform 2s;
+        -webkit-transition: height 0.5s, transform 2s;
+        transition: height 0.5s, transform 2s;
       }
     }
 nav.elmslntoolbar {
