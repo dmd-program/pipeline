@@ -141,11 +141,11 @@ nav.elmslntitlebar {
 nav.elmslntoolbar {
   height: 3.5rem;
   padding-top:0.5rem;
-  transition: all 0.5s ease-out;
+  // transition: all 0.4s;
   li {
     height: 3.5rem;
     line-height: 3.5rem;
-    transition: all 0.5s ease-out;
+    // transition: all 0.4s;
   }
 }
 .elmslntitlebar.valign-wrapper {
@@ -210,14 +210,19 @@ margin-left: 0.5rem
 .radius-4 {
 border-radius: 4px;
 }
+i.left.elmsln-tools-icons {
+  @media #{$medium-only} {
+    margin-right:0.6rem;
+  }
+}
 .elmsln-tools {
   &-icons {
-    height: 1.5rem !important;
-    line-height: 1.5rem !important;
-    font-size: 1.2rem !important;
+    height: 3.5rem !important;
+    line-height: 3.5rem !important;
+    font-size: 1.5rem !important;
   }
   &-text {
-    line-height: 1.5rem !important;
+    line-height: 3.5rem !important;
   }
 }
 h2.elmslntitlebar-title {
@@ -258,6 +263,7 @@ h3.elmslntitlebar-title {
       font-size: 14px;
       @media only screen and (min-width: 993px) and (max-width: 1096px) {
        padding: 0px 10px;
+       font-size: 12px;
       }
     }
   }
