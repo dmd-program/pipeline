@@ -556,13 +556,21 @@ td.topic-category a {
 .y-scroll {
   overflow-y: scroll;
 }
-.no-scroll {
+.no-scroll-y {
   overflow-y: hidden !important;
 }
+.no-scroll-any {
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  position: absolute;
+}
 .elmsln-container, .elmsln-content-wrap {
-  overflow: hidden;
+
   width: 100%;
   height: 100%;
+}
+.elmsln-content-wrap {
+  overflow: hidden;
 }
 .elmsln-container {
   //background: #373a47;
