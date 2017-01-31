@@ -21,7 +21,6 @@ body {
 main {
   flex: 1 0 auto;
 }
-
 .is-active {
   background: #212121;
 }
@@ -46,6 +45,14 @@ main {
     width: 60%;
   }
 }
+.no-padding {
+  padding: 0 !important;
+  &-s {
+    @media #{$small-and-down} {
+        padding: 0 !important;
+      }
+  }
+}
 .no-margin {
     margin: 0 !important;
     &.__top {
@@ -66,8 +73,22 @@ main {
       }
     }
 }
-.padding-5 {
-  &-m {
+.padding {
+  &-10-lr-s {
+    @media #{$small-and-down} {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+  }
+  &-10-tblr-s {
+    @media #{$small-and-down} {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+      }
+  }
+  &-5-m {
     @media #{$medium-only} {
         padding-left: 5px !important;
         padding-right: 5px !important;
@@ -83,6 +104,30 @@ main {
   }
 }
 
+.border {
+  &-r-2-s {
+    @media #{$small-and-down} {
+      border-right:2px solid #212121;
+    }
+  }
+  &-l-2-s {
+    @media #{$small-and-down} {
+      border-left:2px solid #212121;
+    }
+  }
+  &-t-2-s {
+    @media #{$small-and-down} {
+      border-top:2px solid #212121;
+    }
+  }
+}
+h3.tool-name {
+  display: inline-block;
+  margin:0;
+  font-size:1.5rem;
+  line-height: 1.5rem;
+  padding:0.75rem;
+}
 .divider {
   background: transparent;
   border-bottom: 2px solid rgba(0, 39, 59, 0.08);
@@ -119,25 +164,54 @@ nav.elmslntitlebar {
   }
 }
 .parallax-container {
-      height: 10rem;
-      -webkit-transition: none;
-      transition: none;
-      @media #{$medium-only} {
-        height:6rem;
-       -webkit-transition: none;
-        transition: none;
-      }
-      @media #{$small-and-down} {
-        height:2rem;
-        -webkit-transition: none;
-        transition: none;
-      }
-      @media only screen and (max-height : 401px) {
-        height:0rem;
-        -webkit-transition: height 0.5s, transform 2s;
-        transition: height 0.5s, transform 2s;
-      }
+  height: 10rem;
+  -webkit-transition: none;
+  transition: none;
+  @media #{$medium-only} {
+    height:6rem;
+   -webkit-transition: none;
+    transition: none;
+    &.has-admin-bar {
+      height:6rem;
     }
+  }
+  @media #{$small-and-down} {
+    height:2rem;
+    -webkit-transition: none;
+    transition: none;
+    &.has-admin-bar {
+      height:3.5rem;
+    }
+  }
+  @media only screen and (max-height : 401px) {
+    height:0rem;
+    -webkit-transition: height 0.5s, transform 2s;
+    transition: height 0.5s, transform 2s;
+    &.has-admin-bar {
+      height:3.5rem;
+    }
+  }
+}
+
+nav.admin-bar ul li{
+  height: 3.5rem;
+    line-height: 3.5rem;
+    font-size: 0;
+    margin-top:1rem;
+    @media #{$small-and-down} {
+      margin-top:0;
+      width:100%;
+    }
+    @media only screen and (max-height : 401px) {
+      margin-top:0;
+      width:100%;
+    }
+}
+nav.admin-bar ul li a {
+  @media #{$small-and-down} {
+      width:100%;
+    }
+}
 nav.elmslntoolbar {
   height: 3.5rem;
   padding-top:0.5rem;
@@ -473,4 +547,186 @@ td.topic-category a {
 }
 .breadcrumb:last-child {
  color:black;
+}
+
+
+
+
+// Offcanvas Top Slide
+.y-scroll {
+  overflow-y: scroll;
+}
+.no-scroll {
+  overflow-y: hidden !important;
+}
+.elmsln-container, .elmsln-content-wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.elmsln-container {
+  //background: #373a47;
+}
+.menu-wrap a {
+  color: #b8b7ad;
+}
+
+.menu-wrap a:hover,
+.menu-wrap a:focus {
+  color: #c94e50;
+}
+
+.elmsln-content-wrap {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  
+}
+
+.elmsln-content {
+  position: relative;
+  min-height: 100vh;
+  
+}
+
+/* Overlay */
+.elmsln-content::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  content: '';
+  opacity: 0;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0s 0.3s;
+  transition: opacity 0.3s, transform 0s 0.3s;
+}
+
+/* Menu Button */
+a.menu-button {
+  position: relative;
+  z-index: 997;
+  // margin: 1em;
+  // padding: 0;
+  // width: 2.5em;
+  // height: 2.25em;
+  // border: none;
+  // text-indent: 2.5em;
+  // font-size: 1.5em;
+  // color: #212121;
+  // background: transparent;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+// .menu-button::before {
+//   position: absolute;
+//   top: 0.5em;
+//   right: 0.5em;
+//   bottom: 0.5em;
+//   left: 0.5em;
+//   background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
+//   content: '';
+// }
+a.menu-button:focus {
+  background-color:#fff;
+}
+.side-nav li a {
+  width:100%;
+}
+.menu-side a:first-child {
+  border-top:0 !important;
+}
+.menu-side a {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  margin: 0;
+}
+
+.menu-button:hover {
+  opacity: 0.6;
+}
+/* Menu */
+.menu-wrap {
+  position: absolute;
+  font-weight: 700;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.menu-top {
+  line-height: 58px;
+}
+
+.menu-top .profile {
+  display: inline-block;
+  padding: 8px 10px;
+  line-height: 42px;
+}
+
+.menu-top .profile,
+.menu-side {
+  max-width: 200px;
+}
+
+.menu-top .profile img {
+  float: left;
+  margin-right: 1em;
+}
+
+.icon-list {
+  display: inline-block;
+  font-size: 1.25em;
+  margin-left:200px;
+  @media #{$small-and-down} {
+    margin-left:0px;
+  }
+}
+
+.icon-list a {
+  margin: 0 1em 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 32em) {
+  .icon-list {
+    padding-left: 1rem;
+  }
+}
+
+.menu-side a {
+  display: block;
+  padding: 1.2em;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  &:hover {
+    background-color: #212121;
+  }
+}
+
+.menu-side a:first-child {
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Shown menu */
+.show-menu .menu-wrap {
+  opacity: 1;
+}
+
+.show-menu .elmsln-content-wrap {
+  -webkit-transform: translate3d(200px,60px,0);
+  transform: translate3d(200px,60px,0);
+}
+
+.show-menu .elmsln-content::before {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }

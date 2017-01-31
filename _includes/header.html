@@ -1,10 +1,7 @@
-<div class="parallax-container">
-      <div class="parallax"><img src="http://unsplash.it/1200/300/?image=893"></div>
-</div>
+
+
 <div class="row no-margin">
-    <div class="col s12 ">
-        <a href="#" data-activates="mobile-demo" class="left button-collapse grey-text text-darken-4 elmsln-user-text hide-on-med-and-up"><i class="material-icons elmsln-user-icons left">menu</i> Menu</a>
-    </div>
+   
     <div class="col s12 push-s12 push-m0 m6">
         <div class="row no-margin valign-wrapper">
             <div class="valign">
@@ -16,9 +13,11 @@
             </div>
         </div>
     </div>
-    <div class="col s12 pull-s12 pull-m0 m6 ">
-        <nav class="nav-extended z-depth-0 elmslnuserbar">
-            <div class="nav-wrapper white">
+    <div class="col s12 pull-s12 no-padding-s pull-m0 m6 ">
+        <nav class="nav-extended z-depth-0 white elmslnuserbar border-t-2-s">
+            <a href="#" data-activates="mobile-demo" class="left button-collapse elmsln-user-text grey-text text-darken-4 hide-on-med-and-up padding-10-lr-s"><i class="material-icons elmsln-user-icons left">menu</i>Menu</a>
+            <a href="#" data-activates="mobile-demo" class="left button-collapse elmsln-user-text white-text grey darken-4 hide-on-med-and-up no-margin padding-10-tblr-s"><i class="material-icons elmsln elmsln-user-icons left">U</i>Content</a>
+            <div class="nav-wrapper">
                 <!-- Dropdown Menu -->
                 <ul id="dropdown1" class="dropdown-content">
                     <li><a href="#!">Profile Settings</a></li>
@@ -48,7 +47,7 @@
                     <li class="hide-on-large-only"><a class="dropdown-button grey-text text-darken-4 elmsln-user-text padding-5-m" href="#!" data-activates="dropdown2"><i class="material-icons elmsln-user-img radius-4 margin-5-m left"><img src="https://unsplash.it/64.jpg" alt="" class=""></i><i class="material-icons elmsln-user-icons margin-5-m right">keyboard_arrow_down</i></a></li>
 
                 </ul>
-                <ul class="side-nav" id="mobile-demo">
+                <ul class="side-nav border-r-2-s" id="mobile-demo">
                     <!-- User Menu-->
                     <li><a href="collapsible.html" class="grey-text text-darken-4 elmsln-sidenav-text"><i class="material-icons elmsln-sidenav-img radius-4 left"><img src="https://unsplash.it/32.jpg" alt="" class=""></i>Michael</a></li>
                     <li class="divider"></li>
@@ -60,30 +59,27 @@
                     <li class=""><a class="grey-text text-darken-4 elmsln-sidenav-text" href="{{ "/studio" | prepend: site.baseurl }}" class="blue-text"><i class="material-icons elmsln elmsln-sidenav-icons left">r</i>Studio</a></li>
                     <li class=""><a class="grey-text text-darken-4 elmsln-sidenav-text" href="{{ "/crit" | prepend: site.baseurl }}" class="blue-text"><i class="material-icons elmsln elmsln-sidenav-icons left">A</i>Discussions</a></li>
                     <li class=""><a class="grey-text text-darken-4 elmsln-sidenav-text" href="{{ "/forum" | prepend: site.baseurl }}" class="blue-text"><i class="material-icons elmsln elmsln-sidenav-icons left">a</i>Forum</a></li>
-                    <!-- Admin Tools-->
-                    <li class=""><a class="grey-text darken-2 elmsln-sidenav-text" href="{{ site.baseurl }}/book-manager"><i class="material-icons elmsln elmsln-sidenav-icons left">q</i>CIS</a></li>
-                    <li class=""><a class="grey-text darken-2 elmsln-sidenav-text" href="{{ "/profile" | prepend: site.baseurl }}" class="blue-text"><i class="material-icons elmsln elmsln-sidenav-icons left">T</i>Media</a></li>
-                     <li class=""><a class="grey-text darken-2 elmsln-sidenav-text" href="{{ "/profile" | prepend: site.baseurl }}" class=""><i class="material-icons elmsln-sidenav-icons left no-margin">more_vert</i></a></li>
                 </ul>
             </div>
         </nav>
     </div>
 </div>
 <div class="row border-bottom border-top hide-on-small-only">
-    <div class="l7 m12 col">
+    <div class="m12 col">
         <nav class="z-depth-0 white elmslntoolbar">
-            <div class="nav-wrapper white">
+            
                 <ul class="left">
+                    
                     <li class="is-active"><a class="white-text elmsln-tools-text" href="{{ "/outline" | prepend: site.baseurl }}" class="blue-text"><i class="material-icons elmsln elmsln-tools-icons left">x</i>Content</a></li>
                     <li class=""><a class="grey-text text-darken-4 elmsln-tools-text" href="{{ "/studio" | prepend: site.baseurl }}" class="blue-text"><i class="material-icons elmsln elmsln-tools-icons left">r</i>Studio</a></li>
                     <li class=""><a class="grey-text text-darken-4 elmsln-tools-text" href="{{ "/crit" | prepend: site.baseurl }}" class="blue-text"><i class="material-icons elmsln elmsln-tools-icons left">A</i>Discussions</a></li>
                     <li class=""><a class="grey-text text-darken-4 elmsln-tools-text" href="{{ "/forum" | prepend: site.baseurl }}" class="blue-text"><i class="material-icons elmsln elmsln-tools-icons left">a</i>Forum</a></li>
                     <li class="hide-on-large-only"><a class="grey-text darken-2 elmsln-tools-text" href="{{ "/profile" | prepend: site.baseurl }}" class=""><i class="material-icons elmsln-tools-icons left no-margin">more_vert</i></a></li>
                 </ul>
-            </div>
+            
         </nav>
     </div>
-    <div class="l5 hide-on-med-and-down col">
+    <!-- <div class="l5 hide-on-med-and-down col">
         <nav class="z-depth-0 white elmslntoolbar">
             <div class="nav-wrapper white">
                 <ul class="right">
@@ -93,7 +89,7 @@
                 </ul>
             </div>
         </nav>
-    </div>
+    </div> -->
 </div>
 <!-- <div class="navbar">
 <nav class="white blue-text z-depth-0">
