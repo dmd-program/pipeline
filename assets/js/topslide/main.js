@@ -42,14 +42,14 @@
 		if( isOpen ) {
 			classie.remove( bodyEl, 'show-menu' );
 			classie.add( content, 'no-scroll-y' );
-			classie.remove( container, 'no-scroll-any' );
+			classie.remove( container, 'no-scroll-x' );
 			classie.add( openbtn_icon_open, 'hide' );
 			classie.remove( openbtn_icon_close, 'hide' );
 		}
 		else {
 			classie.add( bodyEl, 'show-menu' );
 			classie.remove( content, 'no-scroll-y' );
-			classie.add( container, 'no-scroll-any' );
+			classie.add( container, 'no-scroll-x' );
 			classie.remove( openbtn_icon_open, 'hide' );
 			classie.add( openbtn_icon_close, 'hide' );
 		}
