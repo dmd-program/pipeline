@@ -2,18 +2,38 @@
 <html>
 {% include head.html %}
 <body>
-    <header>
-        {% include header.html %}
-    </header>
-    <main>
-        {{ content }}
-    </main>
-    <footer class="page-footer no-margin __top blue">
-        {% include footer.html %}
-    </footer>
+    <div class="elmsln-container darken-4">
+        {% include admin-nav.html %}
+        <div class="elmsln-content-wrap no-scroll">
+            <div class="parallax-container">
+                <!-- Start Admin bar -->
+                <nav class="nav-extended z-depth-0 transparent admin-bar">
+                    <ul>
+                        <li><a class="white menu-button grey-text text-darken-4 elmsln-tools-text " id="open-button"><i id="ob-icon-close" class="material-icons elmsln-tools-icons left">keyboard_arrow_left</i><i id="ob-icon-open" class="material-icons elmsln-tools-icons left hide">close</i>Course Management</a></li>
+                    </ul>
+                </nav>
+                <!-- End Admin bar -->
+                <div class="parallax grey darken-4"><img src="http://unsplash.it/1200/300/?image=893"></div>
+            </div>
+            <div class="elmsln-content white">
+                <header>
+                    {% include header.html %}
+                </header>
+                <main>
+                    {{ content }}
+                </main>
+                <footer class="page-footer no-margin __top blue">
+                    {% include footer.html %}
+                </footer>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="{{ "/assets/js/jquery.js" | prepend: site.baseurl }}"></script>
     <script type="text/javascript" src="{{ "/assets/js/materialize.js" | prepend: site.baseurl }}"></script>
      <script type="text/javascript" src="{{ "/assets/js/scripts.js" | prepend: site.baseurl }}"></script>
+     <script type="text/javascript" src="{{ "/assets/js/topslide/main.js" | prepend: site.baseurl }}"></script>
+     <script type="text/javascript" src="{{ "/assets/js/topslide/classie.js" | prepend: site.baseurl }}"></script>
+     
     <script type="text/javascript">
     $(function() {
 
