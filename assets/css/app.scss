@@ -729,6 +729,10 @@ a.menu-button:focus {
 .show-menu .elmsln-content-wrap {
   -webkit-transform: translate3d(200px,60px,0);
   transform: translate3d(200px,60px,0);
+  @media #{$small-and-down} {
+    -webkit-transform: translate3d(150px,60px,0);
+    transform: translate3d(150px,60px,0);
+  }
 }
 
 .show-menu .elmsln-content::before {
