@@ -559,8 +559,8 @@ td.topic-category a {
 .no-scroll-y {
   overflow-y: hidden !important;
 }
-.no-scroll-any {
-  overflow-y: hidden !important;
+.no-scroll-x {
+  // overflow-y: hidden !important;
   overflow-x: hidden !important;
   position: absolute;
 }
