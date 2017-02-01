@@ -681,6 +681,9 @@ a.menu-button:focus {
 .menu-top .profile,
 .menu-side {
   max-width: 200px;
+   @media #{$small-and-down} {
+    max-width: 150px;
+  }
 }
 
 .menu-top .profile img {
