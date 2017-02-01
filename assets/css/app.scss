@@ -5,14 +5,7 @@
 @import "fontawesome";
 @import "pygments";
 
-@font-face {
-  font-family: 'Elmsln';
-  src:  url('../fonts/elmsln/elmsln/elmsln.eot') format('eot'),
-        url('../fonts/elmsln/elmsln/elmsln.woff') format('woff');
-}
-.elmsln {
-  font-family: 'Elmsln' !important;
-}
+
 body {
   display: flex;
   min-height: 100vh;
@@ -143,6 +136,216 @@ h3.tool-name {
 }
 .card {
     border-radius: 0;
+}
+article {
+    padding: 10px;
+    font-size: 1.35rem;
+    line-height: 1.7;
+    font-weight: 300;
+    &.post-content {
+      ul {
+          margin-left: 20px;
+      }
+      h1, h2, h3, h4, h5, h6 {
+          font-weight: 200;
+      }
+      li {
+        list-style-type: disc;    
+      }
+      &.on-index {
+        padding:0;
+        font-size: 17px;
+        line-height: 1.5;
+      }
+    }
+}
+.list-article {
+  padding: 20px;
+}
+footer.page-footer {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: -0.003em;
+}
+ // Pipline
+
+// nav .brand-logo {
+//   padding:10px;
+//   height:64px;
+// }
+.tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #212121;
+    will-change: left, right;
+}
+.pipeline {
+  .collapsible-body {
+    padding:1.5rem;
+  }
+  h3 {
+    margin: 3rem 0 5rem;
+    text-transform: uppercase;
+  }
+}
+.collapsible-header img {
+    width: 2rem;
+    font-size: 1.6rem;
+    height: 3rem;
+    display: block;
+    float: left;
+    text-align: center;
+    margin-right: 1rem;
+  }
+  img.svg-header-icon {
+    width: 15rem;
+    font-size: 1.6rem;
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+  }
+  img.svg-section-header-icon {
+    width: 5rem;
+    font-size: 1.6rem;
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+  }
+  // Outline
+  .collapsible-body {
+    padding:2rem;
+  }
+
+  .p-marker {
+    min-height: 100%;
+    float: right;
+    border-left: 1px solid #ccc;
+    padding-right:3rem;
+  }
+#p-format {
+  height: 20rem;
+}
+#p-format.dropdown-content {
+  min-width: 4.5rem;
+}
+[data-activates="p-format"] {
+  width:3rem;
+}
+.ptools ul.menu {
+  margin:0;
+}
+p.p-tools {
+  padding-right:6rem;
+}
+  //crit
+  li.collection-item span.title {
+    font-weight: 500;
+  }
+  li.collection-item span.date {
+    display:block;
+  }
+  .collection .collection-item.avatar p {
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    padding-left:0;
+  }
+  .collection .collection-item.avatar p.reply {
+    padding-right: 0;
+  }
+  textarea.materialize-textarea {
+    min-height:8rem;
+  }
+
+  ul.collection {
+    background:#e0e0e0;
+  }
+  .indent {
+    margin-left:2rem !important;
+  }
+  .indent-indent {
+   margin-left:4rem !important; 
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .collapsible-body {
+    background-color: #fff;
+}
+
+//Book manager
+.card-img-horizontal {
+    width: 10rem;
+    float: left;
+    padding-right: 1rem;
+    overflow: hidden;
+    @media #{$small-and-down} {
+    width: 100%;
+    height:10rem;
+    float: left;
+    padding-right: 0rem;
+    padding-bottom: 1rem;
+  }
+}
+
+//Forum
+.forum-people.collection {
+  min-height:64px;
+  border:none;
+}
+td.topic-category {
+  padding:1rem 2rem 0rem 1rem;
+}
+td.topic-category a {
+  padding:1rem 2rem 1rem 0;
+  display: block;
+}
+.forum-people.collection .collection-item.avatar {
+  min-height:4rem;
+  background-color: #efefef;
+}
+.forum-people.collection .collection-item {
+}
+.forum-people.collection .collection-item.avatar p {
+  padding:0;
+}
+.topic-qty {
+  padding-left:1rem;
+}
+.post-qty {
+}
+.breadcrumb {
+  color:rgba(0,0,0,0.7);
+}
+.breadcrumb:last-child {
+ color:black;
+}
+
+//////////////////// Header Menu and Top Offcanvas Slide ////////////////////
+@font-face {
+  font-family: 'Elmsln';
+  src:  url('../fonts/elmsln/elmsln/elmsln.eot') format('eot'),
+        url('../fonts/elmsln/elmsln/elmsln.woff') format('woff');
+}
+.elmsln {
+  font-family: 'Elmsln' !important;
+}
+svg#svg-icon {
+  width: 3rem;
+  height: auto;
+  .triangle {
+    fill: none;
+    stroke: #212121;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    &:hover {
+      fill: #212121;
+    }
+  }
 }
 nav .brand-logo {
     position: absolute;
@@ -353,206 +556,8 @@ h3.elmslntitlebar-title {
     padding: 1rem 1rem;
 }
 
-article {
-    padding: 10px;
-    font-size: 1.35rem;
-    line-height: 1.7;
-    font-weight: 300;
-    &.post-content {
-      ul {
-          margin-left: 20px;
-      }
-      h1, h2, h3, h4, h5, h6 {
-          font-weight: 200;
-      }
-      li {
-        list-style-type: disc;    
-      }
-      &.on-index {
-        padding:0;
-        font-size: 17px;
-        line-height: 1.5;
-      }
-    }
-}
-.list-article {
-  padding: 20px;
-}
-footer.page-footer {
-  font-weight: 400;
-  font-style: normal;
-  font-size: 13px;
-  line-height: 1.5;
-  letter-spacing: -0.003em;
-}
- // Pipline
-svg#pipeline-icon {
-  width: 3rem;
-  height: auto;
-  line, polyline {
-    stroke: #2196F3;
-  }
-  path {
-    fill: #2196F3;
-  }
-}
-nav .brand-logo {
-  padding:10px;
-  height:64px;
-}
-.tabs .indicator {
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    background-color: #212121;
-    will-change: left, right;
-}
-.pipeline {
-  .collapsible-body {
-    padding:1.5rem;
-  }
-  h3 {
-    margin: 3rem 0 5rem;
-    text-transform: uppercase;
-  }
-}
-.collapsible-header img {
-    width: 2rem;
-    font-size: 1.6rem;
-    height: 3rem;
-    display: block;
-    float: left;
-    text-align: center;
-    margin-right: 1rem;
-  }
-  img.svg-header-icon {
-    width: 15rem;
-    font-size: 1.6rem;
-    display: block;
-    text-align: center;
-    margin: 2rem auto;
-  }
-  img.svg-section-header-icon {
-    width: 5rem;
-    font-size: 1.6rem;
-    display: block;
-    text-align: center;
-    margin: 2rem auto;
-  }
-  // Outline
-  .collapsible-body {
-    padding:2rem;
-  }
-
-  .p-marker {
-    min-height: 100%;
-    float: right;
-    border-left: 1px solid #ccc;
-    padding-right:3rem;
-  }
-#p-format {
-  height: 20rem;
-}
-#p-format.dropdown-content {
-  min-width: 4.5rem;
-}
-[data-activates="p-format"] {
-  width:3rem;
-}
-.ptools ul.menu {
-  margin:0;
-}
-p.p-tools {
-  padding-right:6rem;
-}
-  //crit
-  li.collection-item span.title {
-    font-weight: 500;
-  }
-  li.collection-item span.date {
-    display:block;
-  }
-  .collection .collection-item.avatar p {
-    padding-top: 0rem;
-    padding-bottom: 2rem;
-    padding-right: 2rem;
-    padding-left:0;
-  }
-  .collection .collection-item.avatar p.reply {
-    padding-right: 0;
-  }
-  textarea.materialize-textarea {
-    min-height:8rem;
-  }
-
-  ul.collection {
-    background:#e0e0e0;
-  }
-  .indent {
-    margin-left:2rem !important;
-  }
-  .indent-indent {
-   margin-left:4rem !important; 
-  }
-  .uppercase {
-    text-transform: uppercase;
-  }
-  .collapsible-body {
-    background-color: #fff;
-}
-
-//Book manager
-.card-img-horizontal {
-    width: 10rem;
-    float: left;
-    padding-right: 1rem;
-    overflow: hidden;
-    @media #{$small-and-down} {
-    width: 100%;
-    height:10rem;
-    float: left;
-    padding-right: 0rem;
-    padding-bottom: 1rem;
-  }
-}
-
-//Forum
-.forum-people.collection {
-  min-height:64px;
-  border:none;
-}
-td.topic-category {
-  padding:1rem 2rem 0rem 1rem;
-}
-td.topic-category a {
-  padding:1rem 2rem 1rem 0;
-  display: block;
-}
-.forum-people.collection .collection-item.avatar {
-  min-height:4rem;
-  background-color: #efefef;
-}
-.forum-people.collection .collection-item {
-}
-.forum-people.collection .collection-item.avatar p {
-  padding:0;
-}
-.topic-qty {
-  padding-left:1rem;
-}
-.post-qty {
-}
-.breadcrumb {
-  color:rgba(0,0,0,0.7);
-}
-.breadcrumb:last-child {
- color:black;
-}
 
 
-
-
-// Offcanvas Top Slide
 .y-scroll {
   overflow-y: scroll;
 }
